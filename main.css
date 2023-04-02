@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.bgimg{
+    min-height: 100vh;
+    width: auto;
+    background-size: cover;
+    background: #edf2f4;
+    background-position: center;
+}
+.child-class{
+    padding: 1em;
+    background-color: #2b2d42;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    display: inline-block;
+    font-size: 1.3em;
+    margin-right: 4em;
+    margin-top: .5em;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+}
+ul li a{
+    color: #edf2f4;
+    text-decoration: none;
+}
+
+ul li a:hover /*To set hover effect on nav bar items*/
+{
+    background-color:#aab1be ;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: black;
+    transition: .6s;
+}
+
+.mainimag img{
+    width: 35em;
+    position: absolute;
+    top: 12em;
+    filter: drop-shadow(18px 15px 8px gray); /*To get a shadow behind the image (18px shows X axis, 15px shows Y axis, 8px shows the scatter intensity of blur)*/
+}
+.mainimag{
+    display: flex;
+    justify-content: center;
+}
+.mainimag label{
+    font-size: 3.5em;
+    color: #2b2d42;
+    font-family: 'Poppins', sans-serif;
+}
+.inputt label{
+    color: #2b2d42;
+    font-size: 4em;
+}
+.inputt text{
+    display: inline-block;
+}
+
+/* FAMOUS BOOKS CONTENT MODS BELOW */
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    justify-items: stretch;
+    align-items: center;
+}
+.grid-item{
+    padding: 2em 1em;
+}
+.grid-item a img{
+    border: 2px solid black;
+}
